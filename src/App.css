@@ -1,38 +1,128 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+  background-color: wheat;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.image{
+  margin-bottom: 100px;
+}
+.responsive{
+  max-width:100%;
+   max-height:100%;
+}
+
+.img{
+  width: 500px;
+  height: 150px;
+  position: absolute;
+  top: -2%;
+  left: 50%; 
+  transform: translate(-50%, 0%);
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+
+h6{
+  font-weight: bold;
+}
+
+.item1{
+  flex:1;
+}
+
+.item1 img{
+  display: flex;
+}
+
+.item2{
+  flex:2;
+}
+
+.item2_inner p{
+  font-size: 13px;
+}
+.wrapper2{
+  width: 90%;
+  margin-left: 40px;
+
+}
+.para{
+  font-size: 11px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .machine {
+  margin: 0 100px;
+} */
+/* .machine img{
+  width: 100%;
+} */
+
+.hr{
+  border-top: 2px solid red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.h6{
+  text-align: center;
+}
+.operation{
+  font-size: small;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span{
+  color:red;
+}
+
+.footer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: auto;
+  height:auto;
+  background-color: rgb(238, 32, 32);
   color: white;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 450px ) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .one{
+    margin-bottom:10px;
+  }
+  .two  {
+    margin-bottom:10px;
+  }
+  .three{
+    margin-bottom:10px;
+  }
+
+
+  .wrapper2{
+    margin-left: 0;
   }
 }
+  
+@media only screen and (max-width: 560px){
+  .item1 img{
+    margin-top:40px;
+    height: auto;
+  } 
+
+} 
